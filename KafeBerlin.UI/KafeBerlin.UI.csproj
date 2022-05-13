@@ -58,11 +58,11 @@
     <Compile Include="GecmisSiparisler.Designer.cs">
       <DependentUpon>GecmisSiparisler.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasaFrom.cs">
+    <Compile Include="SiparisFrom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasaFrom.Designer.cs">
-      <DependentUpon>MasaFrom.cs</DependentUpon>
+    <Compile Include="SiparisFrom.Designer.cs">
+      <DependentUpon>SiparisFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,8 +78,8 @@
     <EmbeddedResource Include="GecmisSiparisler.resx">
       <DependentUpon>GecmisSiparisler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasaFrom.resx">
-      <DependentUpon>MasaFrom.cs</DependentUpon>
+    <EmbeddedResource Include="SiparisFrom.resx">
+      <DependentUpon>SiparisFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KafeBerlin.Data\KafeBerlin.Data.csproj">
+      <Project>{e9df05ba-8e8e-4be7-9366-658d47e4faca}</Project>
+      <Name>KafeBerlin.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

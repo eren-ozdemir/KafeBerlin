@@ -1,6 +1,6 @@
 ﻿namespace KafeBerlin.UI
 {
-    partial class MasaFrom
+    partial class SiparisForm
     {
         /// <summary>
         /// Required designer variable.
@@ -92,6 +92,7 @@
             this.btnEkle.TabIndex = 3;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // label2
             // 
@@ -133,14 +134,16 @@
             // dgvDetaylar
             // 
             this.dgvDetaylar.AllowUserToAddRows = false;
-            this.dgvDetaylar.AllowUserToDeleteRows = false;
             this.dgvDetaylar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetaylar.Location = new System.Drawing.Point(13, 66);
             this.dgvDetaylar.Name = "dgvDetaylar";
             this.dgvDetaylar.ReadOnly = true;
+            this.dgvDetaylar.RowHeadersVisible = false;
+            this.dgvDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetaylar.Size = new System.Drawing.Size(704, 614);
             this.dgvDetaylar.TabIndex = 4;
             // 
@@ -224,7 +227,7 @@
             this.btnAnasayfayaDon.Text = "Anasayfaya Dön";
             this.btnAnasayfayaDon.UseVisualStyleBackColor = false;
             // 
-            // MasaFrom
+            // SiparisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -247,8 +250,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MinimumSize = new System.Drawing.Size(1198, 731);
-            this.Name = "MasaFrom";
-            this.Text = "MasaFrom";
+            this.Name = "SiparisForm";
+            this.Text = "Sipariş Ekranı";
             ((System.ComponentModel.ISupportInitialize)(this.nudAdet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetaylar)).EndInit();
             this.ResumeLayout(false);
