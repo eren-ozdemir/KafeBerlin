@@ -48,5 +48,8 @@
     <Compile Include="SiparisDurum.cs" />
     <Compile Include="Urun.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="benioku.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

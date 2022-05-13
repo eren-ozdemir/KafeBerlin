@@ -11,10 +11,10 @@ namespace KafeBerlin.Data
         public string UrunAd { get; set; }
         public decimal BirimFiyat { get; set; }
         public int Adet { get; set; }
-        public string TutarTL { get; }
+        public string TutarTL => $"{Tutar():c2}";
         public decimal Tutar()
         {
-            return 0;
+            return BirimFiyat * Adet;
         }
     }
 }

@@ -13,7 +13,7 @@ namespace KafeBerlin.Data
 
         public override string ToString()
         {
-            return UrunAdi;
+            return $"{UrunAdi} ({BirimFiyat:c2})";
         }
     }
 }
