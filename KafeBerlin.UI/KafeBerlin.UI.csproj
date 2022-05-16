@@ -52,11 +52,11 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="GecmisSiparisler.cs">
+    <Compile Include="GecmisSiparislerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GecmisSiparisler.Designer.cs">
-      <DependentUpon>GecmisSiparisler.cs</DependentUpon>
+    <Compile Include="GecmisSiparislerForm.Designer.cs">
+      <DependentUpon>GecmisSiparislerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SiparisFrom.cs">
       <SubType>Form</SubType>
@@ -75,8 +75,8 @@
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GecmisSiparisler.resx">
-      <DependentUpon>GecmisSiparisler.cs</DependentUpon>
+    <EmbeddedResource Include="GecmisSiparislerForm.resx">
+      <DependentUpon>GecmisSiparislerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SiparisFrom.resx">
       <DependentUpon>SiparisFrom.cs</DependentUpon>
