@@ -51,7 +51,22 @@ namespace KafeBerlin.UI
                 db.AktifSiparisler.Add(siparis);
                 lvi.ImageKey = "dolu";
             }
-            new SiparisForm(db, siparis).ShowDialog();
+            DialogResult dr = new SiparisForm(db, siparis).ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                lvi.ImageKey = "bos";
+                lvi.Selected = false;
+            }
+        }
+
+        private void tsmiUrunler_Click(object sender, EventArgs e)
+        {
+            new UrunlerForm(db).ShowDialog();
+        }
+
+        private void tsmiGecmisSiparisler_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
