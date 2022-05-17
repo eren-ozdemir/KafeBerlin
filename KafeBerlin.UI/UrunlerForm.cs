@@ -1,4 +1,5 @@
 ﻿using KafeBerlin.Data;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -82,6 +83,17 @@ namespace KafeBerlin.UI
             nudBirimFiyat.Value = 0;
             dgvUrunler.Enabled = true;
             btnIptal.Visible = false;
+        }
+
+        private void dgvUrunler_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Seçili ürünler silinecektir. Onaylıyor musunuz?",
+                $"Ürün Silme Onayı",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning,
+                MessageBoxDefaultButton.Button2
+                );
+                e.Cancel = dr == DialogResult.No;
         }
     }
 }

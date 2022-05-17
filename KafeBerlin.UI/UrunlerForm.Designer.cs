@@ -108,6 +108,7 @@
             this.dgvUrunler.Size = new System.Drawing.Size(598, 354);
             this.dgvUrunler.TabIndex = 4;
             this.dgvUrunler.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUrunler_CellDoubleClick);
+            this.dgvUrunler.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dgvUrunler_UserDeletingRow);
             // 
             // Column1
             // 
